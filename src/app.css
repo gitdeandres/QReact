@@ -1,0 +1,53 @@
+@import "tailwindcss";
+/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap'); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  --blue: #263FA9;
+  --dark: #030616;
+  --white: #F2F5F9;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 1em;
+  height: 100vh;
+  background: center url(assets/qa-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--white);
+}
+
+input::placeholder {
+  color: currentColor;
+}
+
+/* input:-internal-autofill-selected {
+  background-color: var(--dark) !important;
+} */
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px var(--dark) inset;
+  -webkit-text-fill-color: var(--white);
+}
+
+#qrcode {
+  border: 40px solid white;
+  border-radius: 20px;
+
+}
+
+#qrcode::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: calc(100% + 40px);
+  height: calc(100% + 40px);
+  border-radius: 50%;
+  box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.3);
+  z-index: -1;
+}
