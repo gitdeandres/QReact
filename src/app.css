@@ -13,21 +13,7 @@
 
 body {
   font-family: "Outfit", sans-serif;
-  font-size: 1em;
-  height: 100vh;
-  background: center url(assets/qa-bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: var(--white);
 }
-
-input::placeholder {
-  color: currentColor;
-}
-
-/* input:-internal-autofill-selected {
-  background-color: var(--dark) !important;
-} */
 
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px var(--dark) inset;
