@@ -20,12 +20,6 @@ input:-webkit-autofill {
   -webkit-text-fill-color: var(--white);
 }
 
-#qrcode {
-  border: 40px solid white;
-  border-radius: 20px;
-
-}
-
 #qrcode::before {
   content: '';
   position: absolute;
