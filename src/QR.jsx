@@ -6,7 +6,7 @@ export function QRCode ({ url, ref }) {
       <span id='qrcode' className='block relative border-40 border-solid border-white rounded-3xl' ref={ref}>
         <QRCodeCanvas
           value={url}
-          title='Código QR'
+          title='QR code'
           size={220}
           level={'H'}
         />
