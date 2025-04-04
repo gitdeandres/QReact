@@ -1,6 +1,7 @@
 export function Input ({ value, onChange }) {
   return (
     <input
+      required
       type='url'
       name='url'
       placeholder='Enter an url'
