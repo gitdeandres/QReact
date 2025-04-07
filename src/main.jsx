@@ -1,9 +1,11 @@
-import { StrictMode } from 'react'
+import { lazy, StrictMode, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './app.css'
-import App from './App.jsx'
-import QRPage from './QRPage.jsx'
+
+// lazy load views
+const App = lazy(() => import('./App.jsx'))
+const QRPage = lazy(() => import('./QRPage.jsx'))
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <Suspense fallback={<p>Loading...</p>}>
+      <RouterProvider router={router} />
+    </Suspense>
   </StrictMode>
 )
