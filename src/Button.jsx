@@ -1,5 +1,5 @@
-import LinkIcon from './assets/link_alt.svg';
-import DownloadIcon from './assets/Load_circle_duotone.svg';
+import LinkIcon from './assets/link.svg';
+import DownloadIcon from './assets/download.svg';
 
 
 export function Button ({ children, download, onClick }) {

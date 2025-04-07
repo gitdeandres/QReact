@@ -1,5 +1,5 @@
-import LogoSmallIcon from './assets/Logo-small.svg';
-import LogoIcon from './assets/Logo.svg';
+import LogoSmallIcon from './assets/logo_small.svg';
+import LogoIcon from './assets/logo.svg';
 
 
 export function Logo ({ small, children }) {
