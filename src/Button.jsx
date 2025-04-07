@@ -6,7 +6,7 @@ export function Button ({ children, download, onClick }) {
   return (
     <button
       type='button'
-      className='bg-(--blue) rounded-xl h-13 bottom-2 min-w-[9rem] w-[30%]'
+      className='bg-(--blue) rounded-xl h-13 bottom-2 min-w-[9rem] w-[30%] cursor-pointer'
       onClick={ onClick } 
     >
       <span>{ children }</span>
